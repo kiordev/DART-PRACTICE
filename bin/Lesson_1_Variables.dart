@@ -30,7 +30,7 @@ void main(){
   var myInt = int.parse('34'); // Строка в число int.parse(строка)
  
   // String -> double
-   var myDouble = double.parse('11.45');
+  var myDouble = double.parse('11.45');
 
   // int -> String
   String str1 = 14.toString();
