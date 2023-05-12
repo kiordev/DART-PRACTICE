@@ -5,6 +5,7 @@ void main(){
   int a = 5;
   print(a);
   print(a);
+    print(a);
 
   if(first_num<second_num){
     result=(first_num+second_num).toString();
