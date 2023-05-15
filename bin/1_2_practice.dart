@@ -26,6 +26,7 @@ void main() {
     var a_list = [1,2,4,5];
     var b_list = [32, 4242, 4242, 25, 2];
 
+    // List size Comparasion
     if(a_list.length>b_list.length){
       print("True");
     }
