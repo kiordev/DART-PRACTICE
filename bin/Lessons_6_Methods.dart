@@ -12,12 +12,27 @@
 // }
 // canDoIt(val) => val>5; // Вариация написания функции в одну строку
 
-double calculatePrice(int count, double price){
-   var result = count*price;
-   return result;
-  }
+// double calculatePrice(int count, double price){
+//    var result = count*price;
+//    return result;
+//   }
 // Function f1 = (int i)=>i*10;
 
+// int add(int a, int b){
+//   return a+b;
+// }
+
+typedef int myFunction(int a, int b);
+
+int add(int a, int b){
+  return a + b;
+}
+
+int sub(int c, int a, int b, int Function(int, int) myAdd){
+  return c - myAdd(a, b);
+}
+
 void main(){
-  print(calculatePrice(10, 5.5));
+  var myAdd = add; // Функцию можно залить в переменную
+  print(sub(10, 5, 2, add)); // Фактически меняется имя
 }
